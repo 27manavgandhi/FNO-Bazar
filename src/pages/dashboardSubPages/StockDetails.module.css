@@ -1,0 +1,67 @@
+.stockDetailsContainer {
+  margin-top: 1rem;
+  margin: 1rem 1rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+thead {
+  /* border-left: 10px solid black; */
+}
+
+.tableContainer {
+  width: 100%;
+  text-align: center;
+  /* table-layout: fixed; */
+  margin-top: 0.5rem;
+}
+.tableContainer th {
+  border: 2px solid #e0dfe4;
+  font-size: 14px;
+  padding: 14px 6px;
+}
+.tableContainer td {
+  border: 2px solid #e0dfe4;
+  padding: 14px 6px;
+  min-width: 50px;
+}
+
+/* .tableContainer td:first-child {
+  background-color: #e0dfe4;
+  color: black;
+} */
+.stocktableContainer {
+  padding: 2rem;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.searchBarContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.searchBar {
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.tableContainer[data-theme="dark"] td,
+.tableContainer[data-theme="dark"] th {
+  border: 2px solid #181a26;
+}
+/* TABLES BACKGROUND */
+.strike_prices {
+  background-color: #e0dfe4;
+  color: black;
+}
+.strike_prices[data-theme="dark"] {
+  background-color: #181a26;
+  color: #ffff;
+}
+@media (max-width: 526px) {
+  .searchBar {
+    width: 98%;
+  }
+}

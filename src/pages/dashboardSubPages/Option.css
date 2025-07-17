@@ -1,0 +1,264 @@
+[data-theme="dark"] {
+  background-color: rgba(0, 4, 18, 1);
+  color: white;
+}
+.navIntra {
+  padding-top: 4vw;
+  background-color: #f8f8ff !important;
+  margin-bottom: -1px;
+}
+.active {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  font-weight: 600;
+}
+[data-theme="light"] .nav-link {
+  color: black !important;
+}
+[data-theme="dark"] .nav-link {
+  color: #f8f8ff !important;
+}
+[data-theme="dark"] .nav-link.active {
+  background-color: rgba(77, 77, 77, 0.5) !important;
+}
+
+.option-subpage {
+  /* color: #000; */
+  height: 80vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+.subpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.subpage-dropdowns-container[data-theme="dark"] {
+  background-color: rgba(0, 4, 18, 1);
+}
+/* GRID  */
+.subpage-dropdowns-container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    minmax(200px, 1fr)
+  ); /* Start with 3 columns */
+  gap: 16px;
+  justify-content: center;
+  padding: 1rem 1rem;
+  width: 100%;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+/* table-info-icons */
+.table-info-icons {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 1rem;
+  padding: 1rem 1rem 0;
+}
+@media (max-width: 1200px) {
+  .subpage-dropdowns-container {
+    grid-template-columns: repeat(
+      2,
+      minmax(200px, 1fr)
+    ); /* Change to 2 columns */
+  }
+}
+
+@media (max-width: 768px) {
+  .subpage-dropdowns-container {
+    grid-template-columns: repeat(
+      1,
+      minmax(200px, 1fr)
+    ); /* Change to 1 column */
+  }
+}
+
+.subpage-dropdowns-container > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+}
+/* DROP DOWN SINGLE CONTAINERS  */
+.subpage-dropdown {
+  padding: 1rem 2rem 1rem 1rem;
+  color: #000;
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  /* max-width: 10rem; */
+  width: 100%;
+  border: none;
+  border-radius: 1.25rem;
+  background: rgba(112, 112, 112, 0.2);
+}
+/* Add a dropdown arrow using a pseudo-element */
+
+.dropdown-container {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-container > p {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+  font-size: 0.7rem;
+  color: rgb(116, 116, 116);
+  width: fit-content;
+}
+
+.subpage-dropdown option {
+  background-color: white;
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+  line-height: 20px;
+  direction: ltr;
+}
+.MuiTabs-root {
+  /* box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2); */
+}
+.MuiTabs-root[data-theme="dark"] {
+  background-color: rgba(0, 4, 18, 1);
+}
+/* .MuiTabs-root[data-theme="dark"] button {
+  color: white !important;
+} */
+
+.muiTab {
+  text-transform: none !important;
+  font-family: "Source Sans 3", sans-serif !important;
+  color: black !important;
+  font-size: 0.8rem !important;
+}
+.muiTab[aria-selected="true"] {
+  font-weight: bold !important;
+}
+.option-subpage[data-theme="dark"] {
+  background-color: rgba(0, 4, 18, 1);
+}
+.any-subpage[data-theme="dark"] {
+  background-color: rgba(0, 4, 18, 1);
+}
+.any-subpage[data-theme="dark"] select {
+  background: rgba(188, 188, 188, 0.4);
+  color: #ffffff;
+}
+.any-subpage[data-theme="dark"] p {
+  color: rgb(137, 137, 137);
+}
+.loader-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Dimmed background color with 50% transparency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Make sure the loader appears on top of other content */
+}
+.info-table {
+  width: 100%;
+  /* table-layout: fixed !important; */
+  border-collapse: collapse;
+  border: 1px solid #e0dfe4;
+  margin-top: 16px;
+  /* white-space: nowrap */
+}
+table {
+  caption-side: top;
+}
+.oichanger-tables {
+  overflow-x: auto;
+}
+/* Table Wrapper  */
+.overflowWrapper {
+  max-width: 100%;
+  overflow-x: auto;
+  /* background-color: #4d4d4d; */
+}
+.containerPadding {
+  padding: 1rem;
+}
+/* table{
+    width: max-content;
+    table-layout: fixed !important;
+    border-collapse: collapse;
+} */
+
+.info-table th {
+  text-align: center;
+  font-size: 14px;
+  padding: 0.5rem 4rem;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.askQuantity {
+  padding: 0rem 0.5rem;
+}
+.info-table td {
+  /* width: max-content; */
+  text-align: center;
+  padding: 10px 4px;
+  min-width: 50px;
+}
+
+.strike_prices {
+  background-color: #e0dfe4;
+  color: black;
+}
+.strike_prices[data-theme="dark"] {
+  background-color: #181a26;
+  color: #ffff;
+}
+/*  COLOR FROM THE APP TABLES BORDER */
+.info-table td,
+.info-table th {
+  border: 2px solid #e0dfe4;
+}
+.info-table[data-theme="dark"] td,
+.info-table[data-theme="dark"] th {
+  border: 2px solid #181a26;
+}
+@media (min-width: 1900px) {
+  .muiTab {
+    font-size: 14px !important;
+    padding: 10px 12px !important;
+  }
+}
+/* media query for screens smaller than 1400 px */
+@media (max-width: 1400px) {
+  .subpage-tab-selector {
+    justify-content: center;
+  }
+}
+
+.textbold {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 700 !important;
+}

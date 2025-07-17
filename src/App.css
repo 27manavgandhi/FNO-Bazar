@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap");
+/* CSS RESET */
+:root {
+  --primary-color: #f8f8ff;
+  --bs-body-bg: #f8f8ff !important;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Source Sans 3", sans-serif !important;
+}
+[data-theme="dark"] {
+  background-color: rgba(0, 4, 18, 1);
+  color: white;
+}
+[data-theme="dark"] select {
+  /* background: rgba(188, 188, 188, 0.4); */
+  color: #ffffff;
+}
+[data-theme="dark"] select option {
+  background: rgba(0, 4, 18, 1); /* Background color for dropdown options */
+  color: #fff; /* Text color for dropdown options */
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0 !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none !important;
+}
+
+html {
+  /* this makes sure the padding and the border is included in the box sizing */
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+}
+.ReactModal__Overlay {
+  z-index: 100;
+}
+html body {
+  padding: 0;
+  margin: 0;
+  overflow-x: inherit !important;
+}
+/* Width and height for the scrollbar track */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Styles for the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Styles for the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* On hover styles for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+@media (max-width: 600px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+}

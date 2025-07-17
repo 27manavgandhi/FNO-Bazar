@@ -1,0 +1,74 @@
+.holdingcontainer {
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.holding_title {
+  font-weight: 800;
+  font-size: 1rem;
+}
+.card_container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: rgba(66, 66, 66, 0.985);
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 250px;
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.value {
+  color: green;
+}
+.holding_container {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e0dfe4;
+  border-radius: 1rem;
+  color: black;
+}
+.holding_container[data-theme="dark"] {
+  background-color: #181a26;
+  color: white;
+}
+.second_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.item_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.holding_profit {
+  margin-right: 5px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #e0dfe4;
+}
+.container[data-theme="dark"] {
+  background-color: rgba(0, 4, 18, 1);
+  color: white;
+}
+.margin_left {
+  margin-left: 1rem;
+  font-size: 18;
+  font-weight: 500;
+}

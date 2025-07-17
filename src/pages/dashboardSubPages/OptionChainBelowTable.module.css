@@ -1,0 +1,75 @@
+.container {
+  font-size: 18;
+  font-weight: 700;
+  margin: 1rem 0rem;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  overflow-x: auto;
+}
+/* changed the below table width  */
+.tableContainer {
+  width: 100%;
+}
+
+.tableContainer th {
+  font-size: 18;
+  font-weight: 700;
+  padding: 1rem;
+}
+.tableContainer td {
+  font-size: 44;
+  font-weight: 700;
+  /*  keep this 150 or else it wont look good  */
+  min-width: 150px;
+  padding: 0;
+}
+/* TABLES BORDER  */
+.tableContainer td,
+.tableContainer th {
+  border: 2px solid #e0dfe4;
+}
+.tableContainer[data-theme="dark"] td,
+.tableContainer[data-theme="dark"] th {
+  border: 2px solid #181a26;
+}
+/* TABLES BACKGROUND */
+.strike_prices {
+  background-color: #e0dfe4;
+  color: black;
+}
+.strike_prices[data-theme="dark"] {
+  background-color: #181a26;
+  color: #ffff;
+}
+
+.progress_bar {
+  height: 20px;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.green {
+  /* height: 100%; */
+  background-color: green;
+}
+
+.red {
+  /* height: 100%; */
+  background-color: red;
+}
+
+/* Add animation to make the transition smoother */
+.green,
+.red {
+  transition: width 0.5s;
+}
+.paddingZero {
+  padding: 0.5rem 1rem !important;
+}
+.marginleft {
+  padding-left: 0.5rem;
+}

@@ -1,0 +1,47 @@
+.container {
+    text-align: center;
+    justify-content: space-between;
+    border:2px solid black;
+    display:flex;
+    flex-grow:1;
+   align-items:center;
+     background-color:lightgreen;
+     width: 40%;
+     margin: 1rem;
+     color: black;
+   
+  }
+  
+  .items{
+    width:8%;
+    padding:2px;
+    flex-grow: 1;
+   
+  }
+  .item1{
+    width:36%
+    
+       
+  }
+  .columnItem{
+    display:flex;
+    flex-direction:column;
+    height:10rem;
+      border:1px solid black;
+     
+      
+  }
+  .stocklisting{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+   
+  }
+  hr{
+    border: 1px solid black;
+  }
+  .tableContainer{
+    display: flex;
+    justify-content: space-between;
+  }

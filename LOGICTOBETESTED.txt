@@ -1,0 +1,2 @@
+if logged in and goes to / must be rerouted to /dashboard
+if logged out and goes to /dashboard must reroute to 

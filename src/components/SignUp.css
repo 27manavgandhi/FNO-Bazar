@@ -1,0 +1,68 @@
+.signup-modal-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.signup-form > input {
+  background-color: transparent;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: rgba(188, 188, 188, 0.4);
+  width: 100%;
+  font-size: 1.2rem;
+}
+.signup-form > button {
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  background: #000;
+  color: white;
+  padding: 0.5rem 2rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.signup-form > select {
+  background-color: transparent;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: rgba(188, 188, 188, 0.4);
+  width: 100%;
+  font-size: 1.2rem;
+}
+.signup-form[data-theme="dark"] > select {
+  background: rgba(188, 188, 188, 0.4);
+  color: #ffffff;
+}
+.signup-form[data-theme="dark"] > select option {
+  background: rgba(0, 4, 18, 1); /* Background color for dropdown options */
+  color: #fff; /* Text color for dropdown options */
+}
+.auth-error {
+  color: rgb(112, 0, 0);
+  background-color: rgb(255, 196, 196);
+  padding: 4px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.signup-form[data-theme="dark"] > input,
+.signup-forgot-password-ui[data-theme="dark"] > input,
+.signup-psw-div[data-theme="dark"] {
+  color: white !important;
+}

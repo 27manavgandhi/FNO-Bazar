@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.favouritesIcon {
+  align-self: flex-end;
+}

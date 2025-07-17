@@ -1,0 +1,38 @@
+table {
+  border-collapse: collapse;
+}
+thead {
+  /* border-left: 10px solid black; */
+}
+.container {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 2rem;
+}
+.tableContainer {
+  width: 100%;
+  text-align: center;
+}
+.tableContainer th {
+  border: 2px solid #e0dfe4;
+  font-size: 14px;
+  padding: 10px 4px;
+}
+.tableContainer td {
+  border: 2px solid #e0dfe4;
+  padding: 8px 2px;
+  min-width: 50px;
+}
+.tableContainer[data-theme="dark"] td,
+.tableContainer[data-theme="dark"] th {
+  border: 2px solid #181a26;
+}
+/* TABLES BACKGROUND */
+.strike_prices {
+  background-color: #e0dfe4;
+  color: black;
+}
+.strike_prices[data-theme="dark"] {
+  background-color: #181a26;
+  color: #ffff;
+}

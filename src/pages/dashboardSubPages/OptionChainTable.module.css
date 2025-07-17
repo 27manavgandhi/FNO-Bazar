@@ -1,0 +1,6 @@
+.container {
+  overflow-x: auto;
+  background-color: aqua;
+  margin: 2rem 0rem;
+  padding: 0 2rem;
+}

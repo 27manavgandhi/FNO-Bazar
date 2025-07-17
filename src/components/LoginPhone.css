@@ -1,0 +1,38 @@
+.phone-login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.phone-login-container input{
+    background-color: transparent;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 16px;
+    background: rgba(188, 188, 188, 0.40);
+    width: 20vw;
+    font-size: 1.2rem;
+}
+.phone-login-container[data-theme='dark'] input,
+.phone-login-container[data-theme='dark'] h4,
+.phone-login-container[data-theme='dark'] p {
+    color: white;
+}
+.phone-login-container button{
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    background: black;
+    color: white;
+    padding: .5rem 3.5rem;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 1rem;
+}
+.phone-login-container[data-theme='dark'] button{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}

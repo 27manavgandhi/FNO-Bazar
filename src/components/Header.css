@@ -1,0 +1,140 @@
+nav {
+  padding-top: 4vw;
+  background-color: #f8f8ff !important;
+  margin-bottom: -1px;
+}
+nav[data-theme="dark"] {
+  background-color: rgba(0, 4, 18, 1) !important;
+}
+.navbar-logo {
+  width: 12vw;
+}
+.nav-link {
+  font-size: 1rem !important;
+}
+nav[data-theme="light"] .nav-link {
+  color: black !important;
+}
+nav[data-theme="dark"] .nav-link {
+  color: #f8f8ff !important;
+}
+.navbar-logo-container {
+  width: 30vw;
+}
+.navbar-right {
+  width: 30vw;
+}
+.offcanvas {
+  width: 200px !important;
+}
+/* DARK THEME CANVAS STYLING */
+#offcanvasNavbar-expand-lg[data-theme="dark"] {
+  background-color: rgba(0, 4, 18, 1);
+}
+#offcanvasNavbar-expand-lg[data-theme="dark"] .h5 {
+  color: #f8f8ff;
+}
+#offcanvasNavbar-expand-lg[data-theme="dark"] a {
+  color: #f8f8ff;
+}
+#offcanvasNavbar-expand-lg[data-theme="dark"] .btn-close {
+  background-color: #f8f8ff;
+}
+
+#light-dark-toggle {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#header-login-button {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  color: black;
+  font-weight: 700;
+  border: none;
+  padding: 6px 24px;
+  line-height: 16px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+  height: 40px;
+}
+#header-login-button[data-theme="dark"] {
+  background-color: rgba(77, 77, 77, 0.5);
+}
+#download-app-button {
+  background-color: black;
+  color: white !important;
+  border-radius: 6px;
+  font-weight: 700;
+  border: none;
+  padding: 6px 24px;
+  line-height: 16px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+}
+#download-app-button[data-theme="dark"] {
+  background-color: #f8f8ff;
+  color: black !important;
+}
+@media (min-width: 2200px) {
+  .navbar-right {
+    padding-left: 300px !important;
+  }
+}
+@media (min-width: 2000px) {
+  .navbar-right {
+    padding-left: 140px !important;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1800px) {
+  .nav-link {
+    font-size: 1rem !important;
+  }
+  .navbar-right {
+    padding-left: 80px !important;
+    gap: 16px;
+  }
+}
+@media (min-width: 1801px) and (max-width: 2000px) {
+  #download-app-button,
+  #header-login-button {
+    padding: 10px 24px !important;
+    border-radius: 12px;
+    font-size: 1rem !important;
+  }
+  .nav-link {
+    font-size: 1.25rem !important;
+  }
+  .navbar-logo {
+    width: auto;
+  }
+  .navbar-right {
+    padding-left: 80px !important;
+    gap: 16px;
+  }
+  .navbar-logo {
+    width: fit-content;
+  }
+  #light-dark-toggle {
+    transform: scale(1.4);
+  }
+}
+@media only screen and (max-width: 1280px) {
+  #download-app-button,
+  #header-login-button {
+    font-size: 0.8rem;
+  }
+  .nav-link {
+    font-size: 0.8rem !important;
+  }
+  .navbar-logo {
+    width: auto;
+  }
+}

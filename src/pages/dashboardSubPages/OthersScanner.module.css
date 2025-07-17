@@ -1,0 +1,52 @@
+.card_Container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.2em;
+  background-color: #e0dfe4;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.card_Container[data-theme="dark"] {
+  background-color: rgba(38, 40, 47, 0.6);
+  color: white;
+}
+.title_Container {
+  color: black;
+}
+.card_Container[data-theme="dark"] .title_Container {
+  color: white;
+}
+.card_Details {
+  display: flex;
+  /* justify-content: space-between; */
+  font-size: 14px;
+  /* width: 20%; */
+}
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.date {
+  margin-left: 1rem;
+}
+.card_Value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  margin: 0rem 1rem;
+}
+.OtherScanner {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0rem;
+  padding: 0rem 1rem;
+  gap: 8px;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}

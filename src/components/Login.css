@@ -1,0 +1,178 @@
+.login-modal-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-modal-content[data-theme="dark"] > form > button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+.login-modal-content > form > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-modal-content[data-theme="dark"] > p {
+  color: white !important;
+}
+.login-form[data-theme="dark"] > input,
+.login-forgot-password-ui[data-theme="dark"] > input,
+.login-psw-div[data-theme="dark"] {
+  color: white !important;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.login-form > input,
+.login-forgot-password-ui > input,
+.login-psw-div {
+  background-color: transparent;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: rgba(188, 188, 188, 0.4);
+  width: 100%;
+  font-size: 1.2rem;
+  max-width: 25rem;
+}
+.login-psw-div {
+  position: relative;
+}
+.login-psw-div img {
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+}
+.login-psw-div img:hover {
+  transform: scale(0.95);
+}
+.login-psw-div > input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: white;
+}
+.login-forgot-password-ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid black;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: black;
+}
+.login-forgot-password-ui > p {
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+.login-forgot-password-ui > input {
+  font-size: 1rem;
+  color: white;
+}
+.show-hide-password {
+  height: 32px;
+}
+.login-forgot-password-ui > button {
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  color: black;
+  padding: 0.5rem 3.5rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 1rem;
+}
+.login-forgot-password-ui > button:hover {
+  background-color: rgb(255, 255, 255, 0.8);
+}
+.login-form button {
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  background: #000;
+  color: white;
+  padding: 0.5rem 3.5rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 1rem;
+  width: 100%;
+}
+.login-error-message {
+  text-align: center;
+  margin: 0;
+  font-size: 0.75rem;
+  color: rgb(112, 0, 0);
+  background-color: rgb(255, 196, 196);
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+#loadinggif {
+  height: 32px;
+}
+#login-with-google-button {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  transition: all ease-in-out 0.2s;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+#login-with-google-button[data-theme="dark"] {
+  background-color: white;
+  color: black;
+}
+#login-with-google-button:hover {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+}
+#login-with-google-button:active {
+  transform: scale(0.97);
+}
+#login-or {
+  color: #000;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 300;
+  display: flex;
+  gap: 4px;
+}
+.login-forgot-password {
+  cursor: pointer;
+  color: grey;
+  display: flex;
+  align-items: center;
+  margin-top: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+.reset-password-status-message {
+  color: white;
+  font-weight: normal !important;
+  font-size: 0.8rem;
+}
+@media only screen and (max-width: 1000px) {
+  .login-form > input,
+  .login-psw-div {
+    width: 100%;
+    font-size: 1rem;
+  }
+}

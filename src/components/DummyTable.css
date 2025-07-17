@@ -1,0 +1,24 @@
+#dummytable td,#dummytable th{
+    border: 1px solid black;
+}
+#dummytable th{
+    text-align: center;
+    padding: 12px;
+}
+#dummytable td{
+    text-align: center;
+    padding: .5rem;
+}
+#dummytable{
+    border-collapse:separate;
+    border-radius:6px;
+    border: 1px solid black;
+    margin-top: 16px;
+}
+#dummytable > tbody > tr > td{
+    padding: 12px;
+}
+.info-area[data-theme='dark'] #dummytable, .info-area[data-theme='dark'] #dummytable th, .info-area[data-theme='dark'] #dummytable td{
+    color: white;
+    border: 1px solid white;
+}
